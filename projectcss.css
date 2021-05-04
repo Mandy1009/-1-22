@@ -1,0 +1,303 @@
+
+
+.h1 {
+    margin: 0 auto 10px;
+    position: relative;
+    top: 50px;
+    background-image: url(./img/logo-fins.png);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FCF7F8;
+    /* background-color: maroon; */
+}
+
+/* NAV----------------------------------------------------------- */
+
+#header {
+    background-color: #FCF7F8;
+}
+
+#iconnav {
+    width: 50px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: fixed;
+    z-index: 999;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    background-color: #FCF7F8;
+    font-family: 'Fraunces', serif;
+    width: 100%;
+    height: 52px;
+    top: 0;
+}
+
+.dropDown-menu a {
+    color: #6b5952;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.dropDown-menu {
+    /* display: inline-block; */
+    display: flex;
+    justify-content: flex-end;
+    /* margin-top: -100px; */
+}
+
+/* ul.dropDown-menu a:hover {
+   text-decoration: ;
+} */
+
+/* 第二層選單位置 */
+
+ul.dropDown-menu li {
+    position: relative;
+    right: 50px;
+    /* background-color: bisque; */
+    line-height: 60px;
+}
+
+ul.dropDown-menu a {
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+}
+
+ul.dropDown-menu ul {
+    /* border: #ccc 1px solid; */
+    position: absolute;
+    /* z-index: 99; */
+    left: -1px;
+    top: 100%;
+    min-width: 180px;
+    z-index: 999;
+    color: #000;
+}
+
+/*隱藏下層選單*/
+
+ul.dropDown-menu ul {
+    display: none;
+}
+
+/* 展開下層選單*/
+
+ul.dropDown-menu li>ul a {
+    color: #FCF7F8;
+}
+
+ul.dropDown-menu li:hover>ul {
+    display: block;
+    background-color: #6b5952;
+}
+
+ul.dropDown-menu li>ul a:hover {
+    background-color: #FCF7F8;
+    color: #6b5952;
+}
+
+/* nav下滑出現底色 +字置換顏色*/
+
+#navChangeA {
+    color: #FCF7F8;
+}
+#navChangeB {
+    color: #6b5952;
+}
+.navChange {
+    position: fixed;
+    width: 100%;
+    background-color: #6b5952;
+    z-index: 998;
+    transition: background-color 1s ease, color 260ms ease, padding 180ms ease;
+    /* background: url(./img/slogo-light.png) no-repeat 2% 70%;
+    background-size: 40px; */
+}
+
+/* 上滑過場 */
+
+.navReturn {
+    transition: background-color 1s ease, color 260ms ease, padding 180ms ease;
+}
+
+/* BODY-------------------------------------------------------------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#firstdiv {
+    margin: 150px 200px 10px;
+    /* float: right; */
+    /* background-color: darkkhaki; */
+    align-items: center;
+}
+
+.centerabout {
+    background: url(./img/author.jpeg) no-repeat center;
+    width: 100%;
+    height: 600px;
+}
+
+.firstdiv>img {
+    margin: 20px;
+    margin: 0 auto;
+}
+
+/* .h1>.firstdiv>div{
+    margin: 100px;
+} */
+
+.aboutList {
+    display: flex;
+    /* background-color: chartreuse;
+    height: 500px; */
+}
+
+.aboutList>.showscript {
+    position: relative;
+    top: 100px;
+    background-color: white;
+    width: 300px;
+    color: #6b5952;
+    /* height: 40vh; */
+    margin: 10px;
+    padding: 10px;
+    flex-grow: 3;
+    border: 0;
+    font-size: 30px;
+    font-family: 'Homemade Apple', cursive;
+    text-align: center;
+
+}
+
+/* 移除點選後外框 */
+
+/* .aboutList>input:focus {
+    outline: 0;
+    border: none;
+    transform: perspective(1px) translateZ(0);
+} */
+
+.aboutList>.showscript:hover {
+    border-bottom: 1px solid #6b5952;
+    /* transition: border-bottom-color .2s ease-out; */
+}
+
+.aboutList>.showscript:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    height: 4px;
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.aboutList>.showscript:hover:hover:before, .aboutList>input:hover:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
+
+/* section---------------------------------------------------------- */
+
+section {
+    /* background-color: crimson; */
+    padding-bottom: 100px;
+    height: 250px;
+    position: static;
+    display: inline-block;
+    justify-content: center;
+}
+
+/* div[class^="About"]{ */
+
+section>div {
+    display: none;
+    /* background-color: lightsteelblue; */
+    position: relative;
+    top: 150px;
+    margin: 0 100px;
+    color: #6b5952;
+    font-style: italic;
+    font-family: 'Noto Serif TC', serif;
+    text-align: center
+    /* height: 200px; */
+    /* display: block; */
+}
+
+/*  -------------------------------------------*/
+
+/* .aboutList>div>img {
+    width: 30vw;
+    margin: 0 auto;
+} */
+
+#myvideo {
+    position: relative;
+    /* top: 200px; */
+    width: 100%;
+    height: 400px;
+    right: 0;
+    /* 滿版 */
+    /* position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%; */
+}
+
+.videoscript {
+    margin: 20px;
+    text-align: center;
+}
+
+/* FOOTER------------------------------------------------------- */
+
+/* 須置底 */
+
+footer {
+    background-color: #6b5952;
+    height: 20vh;
+    width: 100%;
+    padding: 50px;
+    color: #FFF;
+    font-family: 'Fraunces', serif;
+    position: relative;
+    bottom: 0;
+    
+}
+
+footer>div {
+    float: left;
+    margin: auto 0;
+}
+
+footer>div>a {
+    color: #FFF;
+}
+
+footer span {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer span i {
+    padding: 5px;
+    color: white;
+}
+
+/* TEST */

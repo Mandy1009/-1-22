@@ -1,0 +1,118 @@
+ body {
+            background-color: #FCF7F8 !important;
+        }
+
+        .card {
+
+            margin: 20vh 0;
+            width: 300px;
+            height: 300px;
+            flex-basis: 300px;
+
+            bottom: 100px;
+            /* border: 2px solid black; */
+
+        }
+
+        .cardsIn {
+            position: relative;
+            margin-top: 50px;
+
+        }
+
+        .cardsIn .card {
+            background-color: #FFF;
+            height: 630px;
+        }
+
+        .cardsIn .card a {
+            float: right;
+            background-color: rgb(205, 1, 64);
+            color: #FCF7F8;
+        }
+
+        /* .img-box {
+            position: relative;
+            margin: 10px;
+            background-color: #000;
+            opacity: .2;
+            top: 0px;
+        } */
+
+        .cardsIn .card .btn:focus,
+        .btn.focus {
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(205, 1, 64, 0.25);
+        }
+/* 確認資料區---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+        #cfm_list{
+            float:right;
+            display:none;
+        }
+        #cfm_list>ul li:nth-of-type(even){
+            border: 1px solid rgb(205, 1, 64);
+            color:black;
+        }
+        #cfm_list >h4{
+            text-align:center;
+        }
+        #cfm_list >h6{
+            text-align:center;
+        }
+
+        .cfbtn{
+            margin: 0 auto;
+ 
+            text-align:center;
+            
+        }
+/* 表單區---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+        .form-bg {
+
+            background-image: url(./img2/pexels-alina-vilchenko-3363111.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 5px;
+            margin: 10px 0;
+
+        }
+
+        form {
+
+            width: 700px;
+            height: 500px;
+            background-color: rgb(255, 255, 255);
+            position: relative;
+            border: 1px solid #6B5952;
+            border-radius: 1%;
+            margin: 30px;
+            color: #6B5952;
+            padding: 30px;
+            opacity: 0.9;
+
+        }
+
+        .card span {
+            font-weight: bold;
+            color: brown;
+        }
+
+        select{
+            color: #6B5952;
+        }
+        option:hover{
+            box-shadow: 0 0 10px 100px #db871a inset;
+        }
+        .subbtn {
+            background-color: #6B5952;
+            color: #FFF;
+            /* outline:thick double #6B5952; */
+            border-radius: 10%;
+        }
+
+    #admin_login{
+         float: right;
+         color: #6B5952;
+    }
+
+    

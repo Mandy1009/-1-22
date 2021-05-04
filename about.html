@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="icon" href="./img/logoicon-32.ico" type="ico">
+    <style>
+        @import url(projectcss.css);
+        @import url(new_about.css);
+        @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap&family=Noto+Serif+TC:wght@200&display=swap&family=Fraunces&display=swap&family=Homemade+Apple&display=swap');
+
+    </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./project.js" type="text/javascript" defer></script>
+    <!-- <script src="./zoom.js" type="text/javascript"></script> -->
+    <script src="https://use.fontawesome.com/b4547aa58e.js"></script>
+</head>
+
+<body>
+    <nav>
+
+        <div><img id="iconnav" src="./img/slogo-normal.png" alt=""></div>
+        <ul class="dropDown-menu">
+            <li> <a href="index.html">HOME</a> </li>
+            <li> <a href="about.html"> ABOUT</a>
+                <ul class="sec-menu">
+                    <li><a href="about.html">Copperplate</a></li>
+                    <li><a href="#">Spencerian </a></li>
+                    <li><a href="#">Gothic</a> </li>
+                </ul>
+            </li>
+            <li> <a href="gallery.html">GALLERY</a>
+            </li>
+            <li><a href="class.html">CLASS</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid ">
+    <div class="row" id="text">
+        <!--左大圖  -->
+        <div class="a01 col-lg-6 col-sm-12 float-left">
+            <!-- <img class="" src="./gallery/pic (8).jpg" alt=""> -->
+            <img class="mySlides" src="./gallery/pic24.jpg">
+            <img class="mySlides" src="./gallery/pic8.jpg">
+            <img class="mySlides" src="./gallery/pic14.jpg">
+        </div>
+
+
+        <!-- 中間介紹 -->
+        <div class="a02 col-lg-5 col-sm-12 ">
+            <h1>Copperplate Script</h1>
+            <br>
+            <p class="C_Script">
+                初期在十六世紀就有出現於歐洲，是斜體字與人文體變化而來，當時用羽毛筆來書寫，而後來因為這種美麗的字體被運用到銅版印刷因而得名；到了十八十九世紀出現點尖（金屬尖）才逐漸發展為點尖的書寫字體。English
+                Round hand 是較為早期的書寫字體；還有後來在美國風行的 Engrosser’s Script（也稱作 Engraver’s
+                script）這種較為工整更像是刻劃出來的字體。美國獨立宣言的內文就是用銅板體書寫的。
+            </p>
+
+            <p class="p_button"><input id="btn00" type="button" onclick="plusDivs(-1)" value="&lt;"> &nbsp;
+                <input id="btn01" type="button" onclick="plusDivs(1) " value="&gt;" >
+            </p>
+            <div id="box">
+
+                <!-- <div id="large-box">
+                        <img id="large-img" src="./img/large-1.jpg" alt="">
+            
+                    </div> -->
+                <!-- 主要顯示區域 -->
+                <div id="middle-box">
+                    <img id="middle-img" src="./img/middle-1.jpg" alt="">
+
+                </div>
+                <div id="small-box">
+                    <div id="shadow"></div>
+                    <img class="current" src="./img/small-1.jpg" alt="">
+                    <img src="./img/small-2.jpg" alt="">
+                    <img src="./img/small-3.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="a03 col-lg-1 col-sm-12">
+            <!-- <img src="./gallery/pic (11).jpg" alt=""> -->
+        </div>
+
+    </div>
+</div>
+<footer>
+    <div class="copyright">Copyright &copy; All rights Reserved. Designed by <a href="mailto:goooday@gmail.com" target="_blank">Good
+            Day</a></div>
+    </div>
+    <!-- mt-auto -->
+
+    <span style="color: white;">
+
+        <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa fa-facebook-square fa-2x " aria-hidden="true">
+            </i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/?lang=zh-tw" target="_blank"><i class="fa fa-twitter-square fa-2x " aria-hidden="true"></i></a>
+    </span>
+</footer>
+    <!-- </div> -->
+    <script>
+    var slideIndex = 1;  //初始顯示第一張
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var x = document.getElementsByClassName("mySlides");
+            var Scontent = document.getElementsByClassName("C_Script");
+            // console.log(Scontent[0].innerText);
+            if (n > x.length) {
+                // 當slideIndex(n+1)大於slide的長度時，自動跳回第一張
+                slideIndex = 1
+            }
+            if (n < 1) {
+                //當slideIndex(n-1)小於1，也就是已經第一張了，跳到最後一張=3。
+                slideIndex = x.length
+            };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+
+            x[slideIndex - 1].style.display = "block"; //初始顯示位置， slideIndex = 1，x[0]=第一張
+
+            var h1 = document.getElementsByTagName("h1");
+            switch (slideIndex - 1) {
+                case 0:
+                    Scontent[0].innerText = '初期在十六世紀就有出現於歐洲，是斜體字與人文體變化而來，當時用羽毛筆來書寫，而後來因為這種美麗的字體被運用到銅版印刷因而得名；到了十八十九世紀出現點尖（金屬尖）才逐漸發展為點尖的書寫字體。English Round hand 是較為早期的書寫字體；還有後來在美國風行的 Engrosser’s Script（也稱作 Engraver’sscript）這種較為工整更像是刻劃出來的字體。美國獨立宣言的內文就是用銅板體書寫的。';
+                    h1[0].innerText = 'Copperplate Script'
+                    break;
+                case 1:
+                    Scontent[0].innerText = '也有人稱之為史賓賽草書，是一八五Ｏ年代在美國由 Platt Rogers Spencer所開發，而後在美國大為流行，一直到一九二Ｏ年代中期史賓賽仍是基本教育的課程之一。可口可樂的 Logo 就是用這個字體去設計的。';
+                    h1[0].innerText = 'Spencerian Script'
+                    break;
+                default:
+                    Scontent[0].innerText = ' 哥德體或哥特體是約1150年起至17世紀在西歐廣泛使用的字體，特點是非常誇張華麗。在德國，哥德體沿用至二戰結束。德文尖角體為哥德體的典型字體，在西方有時指代全部哥德體；有時也稱為「老英文字體」';
+                    h1[0].innerText = 'Gothic Script'
+                    break;
+            }
+
+            // }
+        }
+
+
+        // function $(id) {
+        //     return document.getElementById(id);
+        // }
+
+        // 滑鼠經過圖片的效果(框+換圖)
+        window.onload = function () {
+
+
+            var oMiddleImg = $('middle-img');
+            var oSmallBox = $('small-box');
+            var aSmallImg = oSmallBox.getElementsByTagName("img");
+            var oMiddleBox = $('middle-box');
+
+            // console.log(oSmallBox)
+            // console.log(aSmallImg[0])
+
+            for (var i = 0; i < aSmallImg.length; i++) {
+                // console.log(aSmallImg[i]);
+                aSmallImg[i].onmouseenter = function () {
+                    for (var j = 0; j < aSmallImg.length; j++) {
+                        aSmallImg[j].className = ''; //去掉邊框
+                    }
+                    this.className = 'current';//移動到的加上邊框
+
+                    // mouseenter的圖片改成middle
+                    oMiddleImg.src = './img/middle' + this.src.slice(this.src.indexOf('-'));
+                    // oLargeImg.src = './img/large' + this.src.slice(this.src.indexOf('-'));
+                    // console.log('./img/middle' + this.src.slice(this.src.indexOf('-')));
+                }
+            }
+
+            // 滑鼠進入m-box顯示放大鏡
+            console.log(aSmallImg);
+            oSmallBox.onmouseenter = function () {
+                oMiddleImg.style.visibility = "visible";
+                
+            // 滑鼠離開m-box隱藏放大鏡
+            oSmallBox.onmouseleave = function () {
+                oMiddleBox.style.visibility = "hidden";
+            
+            }
+
+        }
+
+    }
+    
+
+ 
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<?php
+
+$userName = "Guest";
+if(isset($_COOKIE["who"])){     
+  $userName = $_COOKIE["who"];  
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap&family=Noto+Serif+TC:wght@200&display=swap&family=Fraunces&display=swap&family=Homemade+Apple&display=swap');
+        
+        * {
+            /* font-family: 'Fraunces', serif; */
+            background-color: #FCF7F8;
+        }
+
+        #center_box {
+            display: grid;
+            grid-template-columns: 30vw 40vw; 
+            width: 70vw;
+            height: 80vh;
+            border: 1px solid #6B5952;
+            margin: 20vh auto;
+            
+            border-radius: 10px;
+            background-color: #FFF;
+            text-align: end;
+        }
+
+        ul {
+            list-style-type: none;
+            background-color: #FFF;
+           
+        }
+
+        li {
+            background-color: #FFF;
+           
+        }
+
+        input{
+            border: 1px solid #6B5952;
+            height: 25px;
+            background-color: #FFF;
+        }
+
+        #pic_box{
+            
+            /* background-color: #6B5952; */
+            background: url(./img2/pexels-photo-3278770s.jpg) no-repeat;
+            background-size: cover;
+            /* height: 100%; */
+            border-radius: 0 10px 10px 0;
+        }
+
+        .login_content{
+            font-size: 25px;
+            font-family: 'Fraunces', serif;
+           /* background-color: cadetblue; */
+           margin: auto 50px;
+           background-color: #FFF;
+           /* display: flex; */
+           /* justify-content:center; */
+
+        }
+/* 
+        button{
+            background-color: #6B5952;
+            color: #FCF7F8;
+            border-radius: 5px;
+            font-size: 18px;
+            text-align: end;
+            cursor:pointer;
+            font-family: 'Fraunces', serif;
+        } */
+        
+        a{
+            background-color: #6B5952;
+            color: #FCF7F8;
+            border-radius: 5px;
+            font-size: 18px;
+            text-align: end;
+            cursor:pointer;
+            font-family: 'Fraunces', serif;
+            text-decoration: none;
+            
+        }
+        
+    </style>
+    
+</head>
+
+<body>
+
+    <form id="center_box">
+
+        <div class="login_content">
+            <ul>
+
+                <li>
+                    UserName：<br><input type="text">
+                </li>
+                <li>
+                    Password：<br><input type="password" name="txtPassword" id="txtPassword" />
+                </li>
+                <li> </li>
+            </ul>
+            <!-- <button  type="submit" name="btnOK" id="btnOK" value="Login"> LOGIN</button> -->
+            <a href="editclass.php">LOGIN</a>
+            
+
+        </div>
+
+        <div id="pic_box"></div>
+
+
+    </form>
+
+</body>
+
+</html>

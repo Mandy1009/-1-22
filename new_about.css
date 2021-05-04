@@ -1,0 +1,135 @@
+.row {
+    background-color: #FCF7F8;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    animation: slideLeft 0.3s;
+}
+
+
+.C_Script {
+    text-indent: 3em;
+    width: 620px;
+    height: 120px;
+    font-family: 'Noto Serif TC', serif;
+}
+
+/* img {
+    width: 500px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+.a01 {
+    /* 與nav的距離 */
+    margin-top: 60px;
+    overflow: hidden;
+    /* background-color: rgb(155, 153, 153); */
+    /* background: url(./gallery/pic8.jpg) center no-repeat; */
+    /* background-size: cover; */
+    width: 50vw;
+    height: 100vh;
+}
+
+.mySlides {
+    object-fit: cover;
+    width: 100%;
+}
+
+.a02 {
+    color: #6b5952;
+}
+
+.a03 {
+    /* 與nav的距離 */
+    margin-top: 60px;
+    background: url(./gallery/pic11.jpg) center no-repeat;
+    background-size: cover;
+    width: 5vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.p_button {
+    margin: 10px 10px;
+    /* margin: 10px 10px 10rem; */
+    padding-left: 83%;
+}
+
+.p_button>input {
+    position: relative;
+    /* top:220px; */
+}
+
+input {
+    background-color: #6b5952;
+    color: #FCF7F8;
+    border-radius: 50%;
+    border: 2px solid #6b5952;
+}
+
+input:focus {
+    outline: none;
+}
+
+.Inclickbox>img {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* 放大------------------------------------------------------------------------- */
+
+#large-box {
+    position: relative;
+    /* visibility: hidden; */
+    /* background-color: brown; */
+    margin: 10px;
+    width: 100px;
+}
+
+#large-box>img {
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#middle-box {
+    /* background-color: brown; */
+    width: 300px;
+    margin: 20px;
+    /* border: cadetblue 2px solid; */
+    /* position: relative; */
+    visibility: hidden;
+}
+
+#middle-box>img {
+    object-fit: contain;
+    width: 100%;
+}
+
+#small-box {
+    position: absolute;
+    background-color: #6b5952;
+    text-align: end;
+    width: 100%;
+  
+
+}
+
+#small-box>img {
+    width: 100px;
+    height: 70px;
+    margin: 10px 5px 10px 0px;
+    position: relative;
+}
+
+.current {
+    border: 1px solid #6b5952;
+}
+#box{
+    position: relative;
+    height: 180px;
+
+   
+}

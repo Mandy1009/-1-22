@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Day</title>
+    <link rel="icon" href="./img/logoicon-32.ico" type="ico">
+    <style>
+        @import url(projectcss.css);
+        @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap&family=Noto+Serif+TC:wght@200&display=swap&family=Fraunces&display=swap&family=Homemade+Apple&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./project.js"></script>
+    <script src="https://use.fontawesome.com/b4547aa58e.js"></script>
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+    <div id="header">
+        <nav>
+
+            <div><img id="iconnav" src="./img/slogo-normal.png" alt=""></div>
+            <ul class="dropDown-menu">
+                <li> <a href="index.html">HOME</a> </li>
+                <li> <a href="about.html"> ABOUT</a>
+                    <ul class="sec-menu">
+                        <li><a href="about.html">Copperplate</a></li>
+                        <li><a href="#">Spencerian </a></li>
+                        <li><a href="#">Gothic</a> </li>
+                    </ul>
+                </li>
+                <li> <a href="gallery.html">GALLERY</a>
+                </li>
+                <li><a href="class.html">CLASS</a></li>
+            </ul>
+        </nav>
+
+        <div class="h1"></div>
+    </div>
+    <div class=" row clearfix " id="firstdiv">
+        <div class="col-lg-6  col-sm-12">
+            <div class="centerabout"></div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <p class="h4">A Little About
+                Calligraphy.</p>
+                Calligraphy is the art of forming beautiful symbols by hand and arranging them well. It's a set of skills and techniques for positioning and inscribing words so they show integrity, harmony, some sort of ancestry, rhythm and creative fire. 
+        </div>
+        <!-- 縮小的時候要讓文字在圖片下面 -->
+    </div>
+
+    <div class="aboutList">
+        <!-- 點選出現相應描述 -->
+        <!-- <input class="showscript" type="button" id="A1" value="Copperplate">
+        <input class="showscript" type="button" id="A2" value="Brush">
+        <input class="showscript" type="button" id="A3" value="Gothic"> -->
+        <p class="showscript" id="A1">Copperplate</p>
+        <p class="showscript" id="A2">Brush</p>
+        <p class="showscript" id="A3">Gothic</p>
+
+
+
+    </div>
+
+
+    <section>
+        <div class="h6" id='Aa1'>
+            Copperplate script是一種最常與英語圓手寫體相關的書法書寫樣式。
+        </div>
+        <div class="h6" id='Aa2'>
+            Brush Script是一種隨意的連接腳本字體，由Robert E. Smith在1942年為American Type Founders設計。</div>
+        <div class="h6" id='Aa3'>
+            Gothic Script是約1150年起至17世紀在西歐廣泛使用的字體，特點是非常誇張華麗。</div>
+        <!-- <div id='msg'></div> -->
+    </section>
+    <!-- 滑到影片前影片要縮小 (範圍)?-->
+    <video id=myvideo autoplay muted loop src="./img/handwriting-s.mp4" type="video/mp4">
+        Your browser does not support the video tag.</video>
+    <div class="videoscript">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Facilis non deleniti quo, fuga velit numquam fugit perferendis vero! Inventore culpa architecto sed
+        provident, eveniet perferendis sapiente voluptate dolorem animi neque.
+    </div>
+
+
+    <footer>
+        <div class="copyright">Copyright &copy; All rights Reserved. Designed by <a href="mailto:goooday@gmail.com" target="_blank">Good
+                Day</a></div>
+        </div>
+        <!-- mt-auto -->
+
+        <span style="color: white;">
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook-square fa-2x " aria-hidden="true">
+                </i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/?lang=zh-tw" target="_blank"><i class="fa fa-twitter-square fa-2x " aria-hidden="true"></i></a>
+        </span>
+    </footer>
+    <script>
+        // 下拉時中間圖片放大
+        centerBig = $('.centerabout')
+        var ref = 70;
+        var scroll, zoom;
+
+        $(window).scroll(function (event) {
+            
+            scroll = $(window).scrollTop() //
+            zoom = ref + scroll / 30
+            centerBig.css('background-size', zoom + '%')
+
+        });
+ 
+
+    </script>
+</body>
+
+
+</html>

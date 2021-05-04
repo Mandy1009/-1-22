@@ -1,0 +1,28 @@
+.container {
+    position: relative;
+    top: 100px;
+}
+
+
+/* hover放大--------- */
+.card {
+    /* 放大超出的要隱藏 */
+    overflow: hidden;
+
+}
+
+.card img {
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+}
+.card img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+footer{
+     margin-top: 100px;
+}
+
+.card-columns{
+    
+}
